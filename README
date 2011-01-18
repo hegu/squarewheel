@@ -1,0 +1,3 @@
+The initial plan was to build an distributed and replicated key value store. The python language was suggested and the io library twisted looked very promising.
+
+Henrik Gustafsson (henrik.gson@gmail.com)
