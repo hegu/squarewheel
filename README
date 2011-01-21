@@ -1,3 +1,15 @@
-The initial plan was to build an distributed and replicated key value store. The python language was suggested and the io library twisted looked very promising.
+The initial plan was to build an distributed and replicated key value store. 
+The python language was suggested and the io library twisted looked very promising.
+
+Some initial thoughts:
+* Inspired by leader election from ZAB/Zookeeper
+* Have partion leader where 2 or 4 followers are spread on other nodes.
+* Keys are spread over partions
+* To get good spread and balance the number of partions must be many more than the nodes
+
+Limitations on expected system
+* Configured set of nodes
+* Many reads few writes
+* Low probability of change of nodes but must be able to extend or upgrade without service break
 
 Henrik Gustafsson (henrik.gson@gmail.com)
